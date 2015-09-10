@@ -22,6 +22,7 @@ h1 {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	color:#222222;
+	margin-bottom: 15px;
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
 	font-family: Helvetica, Arial, sans-serif;
 	padding-bottom: 5px;
 	border-bottom: 2px solid #000000;
+	margin-bottom: 10px;
 }
 
 h3{
@@ -65,7 +67,7 @@ h6{
 
 
 ul {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 p {
