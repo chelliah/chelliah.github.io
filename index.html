@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet"  href="resumeStyle.css">
+	<script type="text/javascript" src='jquery.min.js'></script>
+	<script type="text/javascript" src='app.js'></script>
 	<title>Aron Chelliah Thomas - Resume</title>
 </head>
 <body>
@@ -14,92 +17,136 @@
 	</div>
 	<div id="footer"></div> -->
 	<div id="container">
-		<header>
+		<header class='jumbotron'>
 			<h1>Aron Chelliah Thomas</h1>
 			<p id='description'>A Macalester College graduate with a passion for music, politics, and technology. Individual is self-motivated, resourceful, and able to learn from and adapt quickly to complex environments and challenges.</p>
-			<ul id= "contact-info" style="list-style-type:none">
-				<li>Phone: 781-879-0686</li>
-				<li>Local Address: 2532 1st Avenue South, Apartment 304, Minneapolis, MN 55404</li>
-				<li>Permanent Address: 9 Vine Brook Road, Lexington, MA 02421</li>
-				<li>Email Address: <a href="mailto:aron.c.thomas@gmail.com"><p id="email">aron.c.thomas@gmail.com</p></a></li>
-				<li>Github Account: <a href="https://github.com/chelliah">https://github.com/chelliah</a></li>
-			</ul>
 <!-- 			Phone: 781-879-0686
 			Local Address: 1374 Jefferson Avenue, Saint Paul, MN 55105
 			Local Address: 9 Vine Brook Road, Lexington, MA 02421
 			Email Address: <a href="mailto:aron.c.thomas@gmail.com"><p id="email">aron.c.thomas@gmail.com</p></a>
 			<p>Github Account: https://github.com/chelliah</p> -->
 		</header>
-		<div id="content-body">
-			<div class = 'subject' id="content-professional">
-				<h2>Professional Experience</h2>
-				<div class='professional-entry' id="professional-entry-1">
-					<h3>Senior Research Intern: Industrial Economics</h3>
-					<h4>Cambridge, MA</h4>
-					<h5>May-Aug 2014</h5>
-					<ul id="info">
-						<li>Senior intern working on graphical presentation of environmental data related to water and climate change</li>
-					</ul>
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active">
+				<a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+			</li>
+			<li role="presentation">
+				<a href="#music"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Music</a>
+			</li>
+			<li role="presentation">
+				<a href="#projects"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> Coding Projects</a>
+			</li>
+			<li role="presentation">
+				<a href="#contact"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Contact Me</a>
+			</li>
+		</ul>
+		<div class ='tab-content' id="content-body">
+			<div id = 'home' class = 'tab-pane fade in active'>
+				<div class = 'subject well' id="content-professional">
+					<h2>Professional Experience</h2>
+					<div class='extra'>
+						<div class='professional-entry' id="professional-entry-1">
+							<h3>Senior Research Intern: Industrial Economics</h3>
+							<h4>Cambridge, MA</h4>
+							<h5>May-Aug 2014</h5>
+							<ul id="info">
+								<li>Senior intern working on graphical presentation of environmental data related to water and climate change</li>
+							</ul>
+						</div>
+						<div class='professional-entry' id="professional-entry-2">
+							<h3>Junior Intern: Industrial Economics</h3>
+							<h4>Cambridge, MA</h4>
+							<h5>May-Jul 2013</h5>
+							<ul id="info">
+								<li>Junior Intern Working on Water and Climate Change Impact Analyses</li>
+							</ul>
+						</div>
+						<div class='professional-entry' id="professional-entry-3">
+							<h3>Research Assistant, Institute for Climate and Civil Systems</h3>
+							<h4>Cambridge, MA</h4>
+							<h5>Jun-Aug 2012</h5>
+							<ul id="info">
+								<li>Senior intern working on graphical presentation of environmental data related to water and climate change</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class='professional-entry' id="professional-entry-2">
-					<h3>Junior Intern: Industrial Economics</h3>
-					<h4>Cambridge, MA</h4>
-					<h5>May-Jul 2013</h5>
-					<ul id="info">
-						<li>Junior Intern Working on Water and Climate Change Impact Analyses</li>
-					</ul>
+				<div class = 'subject well' id="content-education">
+					<h2>Education</h2>
+					<div class='extra'>
+						<h3>Macalester College</h3>
+						<h4>Saint Paul, MN</h4>
+						<h5>Bachelor of Arts in Politcal Science, Completed May 2015</h5>
+						<ul>
+							<li>Minor in Computer Science</li>
+						</ul>
+						<h6>GPA Overall: 3.27</h6>
+					</div>
 				</div>
-				<div class='professional-entry' id="professional-entry-3">
-					<h3>Research Assistant, Institute for Climate and Civil Systems</h3>
-<!-- 					<ul id="date-location">
-						<li id="location">Cambridge, MA</li>
-						<li id="date">Jun-Aug 2012</li>
-					</ul> -->
-					<h4>Cambridge, MA</h4>
-					<h5>Jun-Aug 2012</h5>
-					<ul id="info">
-						<li>Senior intern working on graphical presentation of environmental data related to water and climate change</li>
-					</ul>
+				<div class = 'subject well' id="content-experience">
+					<h2>Additional Experience</h2>
+					<div class="extra">
+						<h3>Software Skill</h3>
+						<ul>
+							<li>Web Design/Development</li>
+							<li>Javascript - Proficient</li>
+							<li>CSS - Proficient</li>
+							<li>HTML - Proficient</li>
+							<li>Java - Proficient</li>
+							<li>MATLAB - Intermediate</li>
+							<li>Python - Intermediate</li>
+						</ul>
+						<div id="additional-activities">
+							<h3>Additional Experience</h3>
+							<ul>
+								<li>Experience producing and performing own music</li>
+								<li>Experience working in Ableton Live, Audacity, Finale</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class = 'subject well' id="content-references">
+					<h2>References</h2>
+					<div class='extra'>
+						<ul>
+							<li>Paul Dosh, Associate Professor of Political Science at Macalester College, <a href="mailto:dosh@macalester.edu"><span id="email">dosh@macalester.edu</span></a></li>
+							<li>Ken Strzepek, Research Scientist at Massachusetts Institute of Technology, <a href="mailto:strzepek@mit.edu"><span id="email">strzepek@mit.edu</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class = 'subject' id="content-education">
-				<h2>Education</h2>
-				<h3>Macalester College</h3>
-				<h4>Saint Paul, MN</h4>
-				<h5>Bachelor of Arts in Politcal Science, Completed May 2015</h5>
-				<ul>
-					<li>Minor in Computer Science</li>
+			<div id="music" class="tab-pane fade">
+			    <h2>Music</h2>
+			    <!-- beams by chelliah -->
+			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218683190&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <!-- cali girls remix -->
+			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215926194&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <!-- spa untitled -->
+			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187265086&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <!-- spark mix -->
+			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193275630&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+		  </div>
+		  <div id="projects" class="tab-pane fade">
+		   		<h2>Projects</h2>
+		    	<div class='project well col-md-3'>
+		    		<h4>bitStep</h4>
+		    		<p>An Android app developed by Marcus Ulmer, Austin Kim, Benas Klastaitis and Aron Thomas for the comp-225 software design class<p>
+		    		<a href="https://github.com/araumabe/StepSequencer">
+		    		<img border="0" alt="bitStep" src="images/stepSequencerIcon.png" width="300" height="300">
+		    	</div>
+		  </div>
+		  <div id="contact" class="tab-pane well fade">
+			    <h2>Contact Me</h2>
+				    <ul id= "contact-info" style="list-style-type:none">
+					<li>Phone: 781-879-0686</li>
+					<li>Local Address: 2532 1st Avenue South, Apartment 304, Minneapolis, MN 55404</li>
+					<li>Permanent Address: 9 Vine Brook Road, Lexington, MA 02421</li>
+					<li>Email Address: <a href="mailto:aron.c.thomas@gmail.com"><span id="email">aron.c.thomas@gmail.com</span></a></li>
+					<li>Github Account: <a href="https://github.com/chelliah">https://github.com/chelliah</a></li>
 				</ul>
-				<h6>GPA Overall: 3.27</h6>
-			</div>
-			<div class = 'subject' id="content-experience">
-				<h2>Additional Experience</h2>
-				<div id="software-skill">
-					<h3>Software Skill</h3>
-					<ul>
-						<li>Java - Proficient</li>
-						<li>Microsoft Office - Proficient</li>
-						<li>MATLAB - Intermediate</li>
-						<li>Python - Intermediate</li>
-					</ul>
-				</div>
-				<div id="additional-activities">
-					<h3>Additional Experience</h3>
-					<ul>
-						<li>Experience producing and performing own music</li>
-						<li>Experience working in Ableton Live, Audacity, Finale</li>
-					</ul>
-				</div>
-			</div>
-			<div class = 'subject' id="content-references">
-				<h2>References</h2>
-				<ul>
-					<li>Paul Dosh, Associate Professor of Political Science at Macalester College, <a href="mailto:dosh@macalester.edu"><p id="email">dosh@macalester.edu</p></a></li>
-					<li>Ken Strzepek, Research Scientist at Massachusetts Institute of Technology, <a href="mailto:strzepek@mit.edu"><p id="email">strzepek@mit.edu</p></a></li>
-				</ul>
-			</div>
+		  </div>
 		</div>
-<!-- 		<div id="content-footer"></div> -->
 	</div>
 </body>
 </html>

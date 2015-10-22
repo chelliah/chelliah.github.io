@@ -1,4 +1,4 @@
-html body div h1 h2 h3 h4 h5 h6 ul li header {
+/*html body div h1 h2 h3 h4 h5 h6 ul li header {
 	padding: 0;
 	margin: 0;
 	border:0;
@@ -109,7 +109,7 @@ div .subject:hover {
 	opacity:0.9;
 
 }
-/*#content-professional{
+#content-professional{
 	padding: 5px;
 	margin: 5px;
 	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
@@ -156,7 +156,7 @@ div .subject:hover {
 }
 #content-references:hover {
 	opacity:0.9;
-}*/
+}
 
 .professional-entry{
 	border: 1px dotted;
@@ -166,4 +166,21 @@ div .subject:hover {
 
 .professional-entry:last-child{
 	margin-bottom: 0px;
+}*/
+
+.jumbotron h1 {
+	margin-left: 5px;
+}
+
+.jumbotron p {
+	margin-left: 10px;
+}
+
+.well {
+	margin: 10px 5px;
+}
+
+#music iframe{
+	position: relative;
+	margin: 10px auto; 
 }
