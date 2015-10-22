@@ -19,13 +19,13 @@ $(document).ready(function(){
 
 	});
 
-	$('.subject').on('click',function(){
+	$('.subject').on('click', function(){
 		var $el = $(this).children().last();
-		$el.toggle();
+		$el.slideToggle(500);
 	});
 });
 
 
 function initializeDom(){
-	$('.subject > .extra').hide();
+	$('.subject > .extra').slideUp().hide();
 }
