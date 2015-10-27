@@ -19,9 +19,14 @@ $(document).ready(function(){
 
 	});
 
-	$('.subject').on('click', function(){
-		var $el = $(this).children().last();
-		$el.slideToggle(500);
+	// $('.subject').on('click', function(){
+	// 	var $el = $(this).children().last();
+	// 	$el.slideToggle(500);
+	// });
+	$('.subject > h2').on('click',function(){
+		var $el = $(this).next();
+	 	$el.slideToggle(500);
+	 	$(this).children().first().toggleClass('transform');
 	});
 });
 

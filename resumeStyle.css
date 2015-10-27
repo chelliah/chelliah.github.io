@@ -180,6 +180,21 @@ div .subject:hover {
 	margin: 10px 5px;
 }
 
+h2 span {
+	-webkit-transition:rotate .9s linear 0s;
+	transition: rotate .9s linear 0s;
+}
+.transform {
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#expandable {
+	cursor: pointer;
+}
 /*#music iframe{
 	position: relative;
 	margin: 10px auto; 

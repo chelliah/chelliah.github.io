@@ -43,7 +43,7 @@
 		<div class ='tab-content' id="content-body">
 			<div id = 'home' class = 'tab-pane fade in active'>
 				<div class = 'subject well' id="content-professional">
-					<h2>Professional Experience</h2>
+					<h2 id='expandable'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Professional Experience</h2>
 					<div class='extra'>
 						<div class='professional-entry' id="professional-entry-1">
 							<h3>Senior Research Intern: Industrial Economics</h3>
@@ -72,7 +72,7 @@
 					</div>
 				</div>
 				<div class = 'subject well' id="content-education">
-					<h2>Education</h2>
+					<h2 id='expandable'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Education</h2>
 					<div class='extra'>
 						<h3>Macalester College</h3>
 						<h4>Saint Paul, MN</h4>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class = 'subject well' id="content-experience">
-					<h2>Additional Experience</h2>
+					<h2 id='expandable'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> Additional Experience</h2>
 					<div class="extra">
 						<h3>Software Skill</h3>
 						<ul>
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 				<div class = 'subject well' id="content-references">
-					<h2>References</h2>
+					<h2 id='expandable'><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> References</h2>
 					<div class='extra'>
 						<ul>
 							<li>Paul Dosh, Associate Professor of Political Science at Macalester College, <a href="mailto:dosh@macalester.edu"><span id="email">dosh@macalester.edu</span></a></li>
@@ -118,13 +118,21 @@
 			<div id="music" class="tab-pane fade">
 			    <h2>Music</h2>
 			    <!-- beams by chelliah -->
-			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218683190&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <div class='song well'>
+			    	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/218683190&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    </div>
 			    <!-- cali girls remix -->
-			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215926194&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <div class='song well'>
+			    	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215926194&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    </div>
 			    <!-- spa untitled -->
-			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187265086&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <div class='song well'>
+			    	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187265086&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    </div>
 			    <!-- spark mix -->
-			    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193275630&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			    <div class='song well'>
+			    	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193275630&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>eed
+			    </div>
 
 		  </div>
 		  <div id="projects" class="tab-pane fade">
@@ -138,7 +146,7 @@
 		  </div>
 		  <div id="contact" class="tab-pane well fade">
 			    <h2>Contact Me</h2>
-				    <ul id= "contact-info" style="list-style-type:none">
+				<ul id= "contact-info" style="list-style-type:none">
 					<li>Phone: 781-879-0686</li>
 					<li>Local Address: 2532 1st Avenue South, Apartment 304, Minneapolis, MN 55404</li>
 					<li>Permanent Address: 9 Vine Brook Road, Lexington, MA 02421</li>
