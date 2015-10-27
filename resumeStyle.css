@@ -1,185 +1,83 @@
-/*html body div h1 h2 h3 h4 h5 h6 ul li header {
-	padding: 0;
-	margin: 0;
-	border:0;
-}
-
 body {
-	font-family: "Helvetica";
-	color:#444444;
-	background: #333333 url(images/dark_embroidery.png) repeat top center;
-
-}
-
-div {
-	border-radius: 5px;
-}
-
-h1 {
-	padding-top: 0px;
-	padding-left: 10px;
-	font-size: 48px;
-	font-family: Arial, sans-serif;
-	font-weight: bold;
-	color:#222222;
-	margin-bottom: 15px;
+	/*background-color: #D9BFA6;*/
 }
 
 h2 {
-	padding-left: 10px;
-	font-size: 36px;
-	font-family: Helvetica, Arial, sans-serif;
-	padding-bottom: 5px;
-	border-bottom: 2px solid #000000;
-	margin-bottom: 10px;
-}
-
-h3{
-	font-size: 24px;
-	padding-left: 5px;
-	line-height: 1.5;
-	margin:0px;
-
-}
-
-h4{
-	font-size: 20px;
-	padding-left: 10px;
-	line-height: 1.5;
-	margin:0px;
-}
-
-h5{
-	font-size: 18px;
-	padding-left: 10px;
-	line-height: 1.5;
-	margin:0px;
-}
-
-h6{
-	font-size: 16px;
-	padding-left: 10px;
-	line-height: 1.5;
-	margin:0px;
-
-}
-
-
-
-ul {
-	font-size: 16px;
-}
-
-p {
-	font-size:16px;
-}
-
-header {
-	padding: 5px;
+	background-color: #5B7694;
+	color: #E9EAF2;
 	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
+	padding: 20px;
 	border-radius: 5px;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
+
 }
 
-header:hover {
-	opacity:0.9;
-	
+img {
+	border-radius: 5px;
+	display: block;
+	margin: 0 5px;
 }
 
-#description{
-	padding-left: 5px
+.extra {
+	color: #5B7694;
+	padding: 0 15px;
 }
+
+.project { 
+	color: #5B7694;
+}
+
+#contact-info {
+	color: #5B7694;
+}
+
 #email {
-	display: inline;
+	color: #4796DC;
 }
 
-div .subject{
-	padding: 5px;
-	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
+#link {
+	color: #4796DC;
 }
 
-div .subject:hover {
-	opacity:0.9;
-
+/*jumbotrons*/
+.jumbotron{
+	background-color: #5B7694;
+	color: #E9EAF2;
+	border-radius: 0px 0px 5px 5px;
 }
-#content-professional{
-	padding: 5px;
-	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
-}
-#content-professional:hover {
-	opacity:0.9;
-
-}
-
-#content-education{
-	padding: 5px;
-	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
-}
-#content-education:hover {
-	opacity:0.9;
-}
-
-#content-experience{
-	padding: 5px;
-	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
-}
-#content-experience:hover {
-	opacity:0.9;
-}
-
-#content-references{
-	padding: 5px;
-	margin: 5px;
-	background: #aaaaaa url(images/concrete_seamless.png) repeat top center;
-	opacity:0.7;
-	-webkit-transition:opacity .9s linear 0s;
-	transition: opacity .9s linear 0s;
-}
-#content-references:hover {
-	opacity:0.9;
-}
-
-.professional-entry{
-	border: 1px dotted;
-	margin-bottom: 10px;
-
-}
-
-.professional-entry:last-child{
-	margin-bottom: 0px;
-}*/
-
 .jumbotron h1 {
 	margin-left: 5px;
+
 }
 
 .jumbotron p {
 	margin-left: 10px;
 }
 
+
+/*well*/
 .well {
 	margin: 10px 5px;
 }
 
+
+/*navs*/
+.nav{
+	margin-bottom: 10px;
+}
+.nav.nav-tabs li a {
+	color: #5B7694;
+}
+
+.nav.nav-tabs > li.active > a {
+	color: #555555;
+}
+
+/*songs*/
+.song {
+	margin: 10px 25px;
+}
+
+/*transforms*/
 h2 span {
 	-webkit-transition:rotate .9s linear 0s;
 	transition: rotate .9s linear 0s;
@@ -192,10 +90,7 @@ h2 span {
     transform: rotate(180deg);
 }
 
+/*cursor*/
 #expandable {
 	cursor: pointer;
 }
-/*#music iframe{
-	position: relative;
-	margin: 10px auto; 
-}*/
