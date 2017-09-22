@@ -7,10 +7,17 @@
 	<script src="//fast.appcues.com/23379.js"></script>
 	<script> Appcues.anonymous() </script>
 	<script>
-		window.bananaz = function(e) {
-			console.log(e);
-			e.preventDefault();
-		};
+		$(document).ready(function(){
+			$("button.clickable").bind("click",
+                   { key1: "value1", key2: "value2" },
+                   buttonClick);
+
+			function buttonClick(event)
+			{
+				console.log(event);
+				event.preventDefault();
+			} ​
+		})
 	</script>
 	<script type="text/javascript" src='app.js'></script>
 	<title>Aron Chelliah Thomas - Resume</title>
@@ -38,7 +45,7 @@
 		</header>
 
 
-		<button class="btn btn-primary" onclick="window.bananaz()">Some button</button>
+		<button class="btn btn-primary clickable">Some button</button>
 
 		<ul class="nav nav-tabs">
 			<li role="presentation" class="active">
