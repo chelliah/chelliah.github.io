@@ -7,17 +7,14 @@
 	<script src="//fast.appcues.com/23379.js"></script>
 	<script> Appcues.anonymous() </script>
 	<script>
-		$(document).ready(function(){
-			$("button.clickable").bind("click",
-                   { key1: "value1", key2: "value2" },
-                   buttonClick);
 
-			function buttonClick(event)
-			{
-				console.log(event);
-				event.preventDefault();
-			} ​
-		})
+		function buttonClick(event)
+		{
+			console.log(event);
+			event.preventDefault();
+		}
+
+		$("button.clickable").on("click", buttonClick);
 	</script>
 	<script type="text/javascript" src='app.js'></script>
 	<title>Aron Chelliah Thomas - Resume</title>
