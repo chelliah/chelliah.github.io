@@ -272,19 +272,23 @@
     <script src="js/main.js"></script>
     <!-- <script src="http://fast.appcues.com/widget-bundle.js" type="text/javascript"></script> -->
 	  <!-- <script src="http://fast.appcues.com/23379.js"></script> -->
-  <script src="http://development.fast.appcues.com/development/14572.debug.js"></script>
+    <script src="http://development.fast.appcues.com/development/14572.debug.js"></script>
+    <!-- <script src="https://cdn.ravenjs.com/3.24.2/raven.min.js" crossorigin="anonymous"></script> -->
+
 
 	<!-- <script src="https://localhost:8082/appcues.js" data-user-id="14572"></script> -->
 	<script>
     const identify = () => {
       if (window.Appcues) {
-        Appcues.identify('1', {});
+        Appcues.identify('1', {name: 'aron'});
       } else {
           setTimeout(identify, 1000)
       }
     }
 
     identify()
+
+    // Raven.config('https://5b6bbe84750143d0abd058d08dab0b07@sentry.io/1194450').install()
   </script>
 
 
