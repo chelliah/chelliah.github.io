@@ -271,8 +271,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="http://fast.appcues.com/widget-bundle.js" type="text/javascript"></script> -->
-	  <!-- <script src="http://fast.appcues.com/23379.js"></script> -->
-    <script src="http://development.fast.appcues.com/development/14572.debug.js"></script>
+	  <script src="http://fast.appcues.com/23379.js"></script>
+    <!-- <script src="http://development.fast.appcues.com/development/14572.debug.js"></script> -->
     <!-- <script src="https://cdn.ravenjs.com/3.24.2/raven.min.js" crossorigin="anonymous"></script> -->
 
 
@@ -281,6 +281,17 @@
     const identify = () => {
       if (window.Appcues) {
         Appcues.identify('1', {name: 'aron'});
+
+        // widget.init("#my-widget", {
+        //     // Optionally specify the position of the content relative to the widget icon.
+        //     // Possible values: "center" (default; alias "bottom", "bottom-center"), "left" (alias "bottom-left"),
+        //     //   "right" (alias "bottom-right"), "top" (alias "top-center"), "top-left", "top-right"
+        //     position: "left",
+
+        //     // Optionally add a header and/or footer.
+        //     header: "<h1>Tutorials</h1>",
+        //     footer: "<p>Your footer here</p>"
+        // });
       } else {
           setTimeout(identify, 1000)
       }
