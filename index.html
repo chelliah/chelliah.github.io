@@ -278,7 +278,7 @@
 
 	<!-- <script src="https://localhost:8082/appcues.js" data-user-id="14572"></script> -->
 	<script>
-    const identify = () => {
+    function identify() {
       if (window.Appcues) {
         Appcues.identify('1', {name: 'aron'});
 
@@ -293,11 +293,11 @@
         //     footer: "<p>Your footer here</p>"
         // });
       } else {
-          setTimeout(identify, 1000)
+          setTimeout(identify, 1000);
       }
     }
 
-    identify()
+    identify();
 
     // Raven.config('https://5b6bbe84750143d0abd058d08dab0b07@sentry.io/1194450').install()
   </script>
